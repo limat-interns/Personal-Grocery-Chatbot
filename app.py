@@ -1,12 +1,10 @@
 import os
-import json
 import requests
 from datetime import datetime
 from flask import Flask, request, redirect, url_for, session, jsonify, render_template
 from flask_cors import CORS
 import google.generativeai as genai
 from dotenv import load_dotenv
-from jose import jwt
 
 # Load environment variables
 load_dotenv()
